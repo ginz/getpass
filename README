@@ -1,4 +1,14 @@
 getpass
 =======
 
-Automatically get beautiful password
+This utility lets you create good-spelled passwords:
+
+Just to start it you've to cd into get_pass and invoke ./get_pass in such a way:
+./gen_pass <statistics_file>
+Then you'll have to write number of symbols you want to have in your password
+The example of statistics file can be found in stat file in gen_pass directory, but if you want to create your own you've to cd into text_analysis,
+add here some big source of text (For example, there you can find Tolkien's first part of trilogy "The Lord of The Rings"), that will be analyzed after you invoke it like this:
+./text_analysis <your text file> > <output file>
+In output file you'll get some file you can you then in gen_pass
+
+For any explanations or smth like this, write here: dmitry.a.ginzburg@gmail.com
