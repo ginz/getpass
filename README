@@ -3,18 +3,29 @@ getpass
 
 This utility lets you create good-spelled passwords:
 
-Just to start it you've to cd into get_pass and invoke ./get_pass in such a way:
+Firstly, you need to make a project by invoking make command:
 
-make
-./gen_pass <statistics_file>
+$ make
+
+Just to start generator you've to invoke ./get_pass in such a way:
+
+$ ./gen_pass <statistics_file>
+or
+$ gen_pass <statistics_file>
+if you have it already installed by
+$ sudo make install
+command
 
 Then you'll have to write number of symbols you want to have in your password
-The example of statistics file can be found in lotr_stat file in gen_pass directory, but if you want to create your own you've to cd into text_analysis,
-add here some big source of text (For example, in examples directory you can find Tolkien's first part of trilogy "The Lord of The Rings"), that will be analyzed after you invoke it like this:
 
-make
-./text_analysis <your text file> > <output file>
+The example of statistics file can be found in lotr_stat file in root directory.
+But if you want to create your own you've to add here some big source of text (for example, in examples directory you can find Tolkien's first part of trilogy "The Lord of The Rings"), that will be analyzed after you invoke it like this:
+
+$ ./text_analysis <your text file> > <output file>
+or
+$ text_analysis
+if you have it already installed
 
 In output file you'll get some file you can you then in gen_pass
 
-For any explanations or smth like this, write here: dmitry.a.ginzburg@gmail.com
+For any explanations or bug reports, write here: dmitry.a.ginzburg@gmail.com
