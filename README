@@ -1,6 +1,9 @@
 getpass
 =======
 
+I CAN'T GUARANTEE ANY ABILITY TO WORK IN ANY OS EXCEPT LINUX
+
+
 This utility lets you create good-spelled passwords:
 
 Firstly, you need to make a project by invoking make command:
@@ -18,7 +21,7 @@ command
 
 Then you'll have to write number of symbols you want to have in your password
 
-The example of statistics file can be found in lotr_stat file in root directory.
+The example of statistics file can be found in lotr_stat file in examples directory.
 But if you want to create your own you've to add here some big source of text (for example, in examples directory you can find Tolkien's first part of trilogy "The Lord of The Rings"), that will be analyzed after you invoke it like this:
 
 $ ./text_analysis <your text file> > <output file>
@@ -27,5 +30,6 @@ $ text_analysis
 if you have it already installed
 
 In output file you'll get some file you can you then in gen_pass
+
 
 For any explanations or bug reports, write here: dmitry.a.ginzburg@gmail.com
